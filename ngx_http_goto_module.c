@@ -101,7 +101,7 @@ ngx_http_goto_handler(ngx_http_request_t *r)
         (void) ngx_http_internal_redirect(r, &path, &args);
     }
 
-    ngx_http_finalize_request(r, NGX_DONE);
+    ngx_http_finalize_request(r, NGX_OK);
     return NGX_DONE;
 }
 
